@@ -24,7 +24,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <mysql.version>5.1.44</mysql.version>
+        <mysql.version>5.1.6</mysql.version>
         <tomcat.scope>compile</tomcat.scope>
     </properties>
 
@@ -41,7 +41,7 @@
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>${mysql.version}</version>
+                <version>5.1.42</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
