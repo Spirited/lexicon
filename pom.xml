@@ -5,8 +5,46 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.kompanets.lexicon</groupId>
-    <artifactId>lexicon</artifactId>
+    <artifactId>lexicon-parent</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <name>lexicon Service Parent</name>
+    <modules>
+        <module>lexicon-service</module>
+        <module>lexicon-common</module>
+        <module>lexicon-war</module>
+    </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.2.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <mysql.version>5.1.44</mysql.version>
+        <tomcat.scope>compile</tomcat.scope>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>${tomcat.scope}</scope>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
 </project>
