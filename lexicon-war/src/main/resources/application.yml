@@ -3,7 +3,7 @@ server:
 
 spring:
   profiles:
-    active: mysql, db_log
+    active: h2, db_log
   application:
     name: LexiconService
   h2:
