@@ -1,4 +1,4 @@
-package com.kompanets.lexicon.configuration;
+package com.kompanets.lexicon.service.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
